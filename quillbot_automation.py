@@ -2,12 +2,11 @@ from time import sleep
 import random
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.action_chains import ActionChains
 
 quill_email="eamaple@mail.com"
 quill_password="example_pass"
 
-# Driver
+# Headless Driver
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
@@ -17,7 +16,6 @@ chrome_options.add_argument('--enable-features=NetworkService')
 chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
 chrome_options.add_argument('--disable-dev-shm-usage')
 driver = webdriver.Chrome('chromedriver', options=chrome_options)
-action = ActionChains(driver)
 
 def quill_login():
     driver.maximize_window()
