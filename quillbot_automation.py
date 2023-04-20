@@ -1,5 +1,5 @@
-quill_email="copyaiscript@gmail.com"
-quill_password="U46m4aR$w.C9T!5Ux#$8J"
+quill_email="eamaple@gmail.com"
+quill_password="example"
 
 
 from time import sleep
