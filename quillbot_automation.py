@@ -1,12 +1,11 @@
-quill_email="eamaple@gmail.com"
-quill_password="example"
-
-
 from time import sleep
 import random
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
+
+quill_email="eamaple@mail.com"
+quill_password="example_pass"
 
 # Driver
 chrome_options = webdriver.ChromeOptions()
