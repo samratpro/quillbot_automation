@@ -27,8 +27,10 @@ def quill_login():
     driver.execute_script(f'document.querySelector("#mui-4").value="{quill_password}"')
     driver.execute_script('document.querySelector(".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-fullWidth.MuiButtonBase-root.auth-btn.css-v7do75").click()')
 
+quill_login()
+
 def get_quill_text(text):
-    quill_login()
+    # quill_login()
     sleep(5)
     driver.find_element(By.XPATH, "//div[@id='paraphraser-input-box']").send_keys(text)
     sleep(2)
